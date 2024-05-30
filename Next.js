@@ -29,10 +29,10 @@ let images = [
     { img: 'Clase 2/Larva filariforme de S. Stercoralis.png', answer: 'Larva filariforme de S. Stercoralis' },
     { img: 'Clase 2/Larva rhabditoidea de S. Stercoralis 2.png', answer: 'Larva rhabditoidea de S. Stercoralis' },
     { img: 'Clase 2/Larva rhabditoidea de S. Stercoralis.png', answer: 'Larva rhabditoidea de S. Stercoralis' },
-    { img: 'Clase 3/Complejo E. Histolytica-E. Dispar.png', answer: 'Complejo E. Histolytica-E. Dispar' },
+    { img: 'Clase 3/Complejo E. Histolytica-E. Dispar.png', answer: 'Complejo E. Histolytica-Dispar' },
     { img: 'Clase 3/Cryptosporidium.png', answer: 'Cryptosporidium' },
-    { img: 'Clase 3/Cycloisospora belli blastospora rota.png', answer: 'Cycloisospora belli blastospora. Dispar' },
-    { img: 'Clase 3/Cycloisospora belli blastospora.png', answer: 'Cycloisospora belli blastospora' },
+    { img: 'Clase 3/Cycloisospora belli blastospora rota.png', answer: 'Blastospora Cycloisospora belli' },
+    { img: 'Clase 3/Cycloisospora belli blastospora.png', answer: 'Blastospora Cycloisospora belli' },
     { img: 'Clase 3/Cyclospora (mas grande) y Cryptosporidium (mas chico).png', answer: 'Cyclospora y Cryptosporidium' },
     { img: 'Clase 3/E. Nana trofozoito.png', answer: 'Trofozoito E. Nana' },
     { img: 'Clase 3/Entamoeba Coli 2.png', answer: 'Entamoeba Coli' },
@@ -80,16 +80,33 @@ inputElement.addEventListener('keypress', function(event) {
     }
 });
 
+// Función para calcular la distancia de Levenshtein
+function levenshtein(a, b) {
+    let t = [], u, i, j, m = a.length, n = b.length;
+    if (!m) { return n; }
+    if (!n) { return m; }
+    for (j = 0; j <= n; j++) { t[j] = j; }
+    for (i = 1; i <= m; i++) {
+        for (u = [i], j = 1; j <= n; j++) {
+            u[j] = a[i-1] === b[j-1] ? t[j-1] : Math.min(t[j-1], t[j], u[j-1]) + 1;
+        } 
+        t = u;
+    }
+    return t[n];
+}
+
 // Función para verificar la respuesta del usuario
 function checkAnswer() {
     let userAnswer = document.getElementById('user-answer').value.toLowerCase();
     let correctAnswer = document.getElementById('image').dataset.answer.toLowerCase();
 
-    if (userAnswer === correctAnswer) {
+// Si la respuesta del usuario está errada por 1 o 2 letras, se considera correcta
+     if (levenshtein(userAnswer, correctAnswer) <= 2) {
         alert('¡Correcto!');
     } else {
         alert('Incorrecto, la respuesta correcta era ' + correctAnswer);
     }
+
 
     // Mostrar una nueva imagen
     showRandomImage();
