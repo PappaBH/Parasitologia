@@ -16,7 +16,7 @@ let images = [
     { img: 'Clase 1/S. Mansoni copulando (hembra en el conducto ginecoforo).png', answer: 'S. Mansoni copulando' },
     { img: 'Clase 2/Celula nodriza deTrichinella.png', answer: 'Celula nodriza de Trichinella' },
     { img: 'Clase 2/Hembra de E. Vermicularis 2.png', answer: 'Hembra de E. Vermicularis' },
-    { img: 'Clase 2/Hembra de E. Vermicularis.png', answer: 'embra de E. Vermicularis' },
+    { img: 'Clase 2/Hembra de E. Vermicularis.png', answer: 'Hembra de E. Vermicularis' },
     { img: 'Clase 2/Huevo de A. Lumbricoides fertil (Casi decorticado).png', answer: 'Huevo de A. Lumbricoides fertil' },
     { img: 'Clase 2/Huevo de E. Vermicularis.png', answer: 'Huevo de E. Vermicularis' },
     { img: 'Clase 2/Huevo de Trichuria.png', answer: 'Huevo de Trichuria' },
