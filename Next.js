@@ -55,14 +55,23 @@ let images = [
     // Agrega más objetos aquí
 ];
 
+// Arreglo para almacenar las imágenes que aún no han sido mostradas
+let remainingImages = [...images];
+
 // Función para mostrar una imagen aleatoria
 function showRandomImage() {
-    let randomIndex = Math.floor(Math.random() * images.length);
+    let randomIndex = Math.floor(Math.random() * remainingImages.length);
     let imgElement = document.getElementById('image');
-    imgElement.src = images[randomIndex].img;
-    imgElement.dataset.answer = images[randomIndex].answer.toLowerCase(); // Convertir a minúsculas aquí
+    imgElement.src = remainingImages[randomIndex].img;
+    imgElement.dataset.answer = remainingImages[randomIndex].answer.toLowerCase(); // Convertir a minúsculas aquí
      // Limpiar el campo de entrada
      document.getElementById('user-answer').value = '';
+         // Elimina la imagen mostrada del arreglo de imágenes restantes
+    remainingImages.splice(randomIndex, 1);
+         // Si todas las imágenes han sido mostradas, reinicia el arreglo de imágenes restantes
+    if (remainingImages.length === 0) {
+        remainingImages = [...images];
+    }
     }
 
     // Obtén una referencia al campo de entrada y al botón
