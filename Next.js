@@ -20,7 +20,7 @@ let images = [
     { img: 'Clase 2/Hembra de E. Vermicularis.png', answer: 'Hembra Enterobius Vermicularis' },
     { img: 'Clase 2/Huevo de A. Lumbricoides fertil (Casi decorticado).png', answer: 'Huevo Ascaris Lumbricoides fertil' },
     { img: 'Clase 2/Huevo de E. Vermicularis.png', answer: 'Huevo Enterobius Vermicularis' },
-    { img: 'Clase 2/Huevo de Trichuria.png', answer: 'Huevo Trichuria' },
+    { img: 'Clase 2/Huevo de Trichuria.png', answer: 'Huevo Trichuris Trichura' },
     { img: 'Clase 2/Huevo de Uncinarias.png', answer: 'Huevo Uncinarias' },
     { img: 'Clase 2/Huevo infertil A. Lumbricoides.png', answer: 'Huevo infertil Ascaris Lumbricoides' },
     { img: 'Clase 2/Huevo mamelonado de A. Lumbricoides.png', answer: 'Huevo mamelonado Ascaris Lumbricoides' },
