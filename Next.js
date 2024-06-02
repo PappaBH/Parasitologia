@@ -35,7 +35,7 @@ let images = [
     { img: 'Clase 3/Cryptosporidium.png', answer: 'Cryptosporidium' },
     { img: 'Clase 3/Cycloisospora belli blastospora rota.png', answer: 'Blastospora Cytoisospora belli' },
     { img: 'Clase 3/Cycloisospora belli blastospora.png', answer: 'Blastospora Cytoisospora belli' },
-    { img: 'Clase 3/Cyclospora (mas grande) y Cryptosporidium (mas chico).png', answer: 'Cyclospora y Cryptosporidium' },
+    { img: 'Clase 3/Cyclospora (mas grande) y Cryptosporidium (mas chico).png', answer: 'Cyclospora cayetanensis y Cryptosporidium' },
     { img: 'Clase 3/E. Nana trofozoito.png', answer: 'Trofozoito Endolimax Nana' },
     { img: 'Clase 3/Entamoeba Coli 2.png', answer: 'Entamoeba Coli' },
     { img: 'Clase 3/Entamoeba coli.png', answer: 'Entamoeba coli' },
