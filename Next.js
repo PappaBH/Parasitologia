@@ -40,6 +40,8 @@ let images = [
     { img: 'Clase 3/Entamoeba Coli 2.png', answer: 'Entamoeba Coli' },
     { img: 'Clase 3/Entamoeba coli.png', answer: 'Entamoeba coli' },
     { img: 'Clase 3/Esquizonte de Plasmodium spp.png', answer: 'Esquizonte Plasmodium spp' },
+    { img: 'Clase 3/Blastocystis spp.png', answer: 'Blastocystis spp' },
+    { img: 'Clase 3/Quiste Iodamoeba butschii.png', answer: 'Quiste Iodamoeba butschii' },
     { img: 'Clase 3/I. Butschlii trofozoito coloreado.png', answer: 'Trofozoito Iodamoeba Butschlii' },
     { img: 'Clase 3/P. Falciparum.png', answer: 'Plasmodium Falciparum' },
     { img: 'Clase 3/P. Vivax 2.png', answer: 'Plasmodium Vivax' },
