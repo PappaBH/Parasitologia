@@ -10,7 +10,7 @@ let images = [
     { img: 'Clase 1/Huevo de Schistosoma mansoni.png', answer: 'Huevo Schistosoma mansoni' },
     { img: 'Clase 1/Huevo de Taenia spp 2.png', answer: 'Huevo Taenia spp' },
     { img: 'Clase 1/Huevo de Taenia spp.png', answer: 'Huevo Taenia spp' },
-    { img: 'Clase 1/Huevos de D. Caninum.png', answer: 'Huevo Dipylidium Caninum' },
+    { img: 'Clase 1/Huevos de D. Caninum.png', answer: 'Capsula ovigera Dipylidium Caninum' },
     { img: 'Clase 1/Proglotide D. Latum.png', answer: 'Proglotide gravida Diphyllobothrium Latum' },
     { img: 'Clase 1/Proglotide T. Saginata.png', answer: 'Proglotide gravida Taenia Saginata' },
     { img: 'Clase 1/S. Mansoni copulando (hembra en el conducto ginecoforo).png', answer: 'Schistosoma Mansoni copulando' },
