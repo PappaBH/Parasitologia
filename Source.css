@@ -73,3 +73,9 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+#repaso-button {
+    background-color: #f3a891;
+    color: white;
+    margin-top: 20px;
+}
